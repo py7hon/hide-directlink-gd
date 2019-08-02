@@ -56,4 +56,4 @@ if($_GET['id'] != ""){
     header("Content-Transfer-Encoding: Binary");
     header("Content-disposition: attachment; filename=\"$name\"");
     echo readfile($redirect);
-    }else{echo "error";}?>
+    }else{header('Content-Type: application/json');$error = array("error"=>true);echo json_encode($error);}?>
