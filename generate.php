@@ -70,7 +70,7 @@
 
         <br><br>
   <section class="footme">
-      Google Drive Direct Link Generator <a id="nochange" href="https://fb.me/iqbalrifaii">Iqbal Rifai</a>
+      Google Drive Direct Link Generator <a id="nochange" href="https://fb.me/composer.json">Iqbal Rifai</a>
   </section>
 </body>
 </html>
