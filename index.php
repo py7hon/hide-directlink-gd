@@ -52,12 +52,12 @@ if ($_GET['id'] != "")
     $ori                    = my_simple_crypt($id, 'd');
     $apikey                 = " "; //your api key
     //$url2 = "https://www.googleapis.com/drive/v2/files/$ori?alt=media&key=$apikey";
+    $url                    = "https://www.googleapis.com/drive/v3/files/$ori?key=$apikey";
     $redirect               = "https://www.googleapis.com/drive/v3/files/$ori?alt=media&key=$apikey";
     //$json2 = file_get_contents($url2);
     $json                   = file_get_contents($url);
     $data                   = json_decode($json, true);
     //$data2 = json_decode($json2, true);
-    $url                    = "https://www.googleapis.com/drive/v3/files/$ori?key=$apikey";
     $get_http_response_code = get_http_response_code($redirect);
     //$size = $data2["fileSize"];
     $name                   = $data["name"];
