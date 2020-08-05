@@ -1,0 +1,7 @@
+{ 
+	"name": "Hide Directlink Google Drive",
+	"description": "hide directlink google drive with custom link",
+	"repository": "https://github.com/py7hon/hide-directlink-gd",
+	"logo": "",
+	"keywords": ["hide", "google drive"]
+}
