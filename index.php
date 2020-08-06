@@ -41,8 +41,8 @@ function get_http_response_code($redirect){
     $id                     = $_GET['id'];
     $ori                    = my_simple_crypt($id, 'd');
     $apikey                 = ''; //your api key
-    $url                    = "https://www.googleapis.com/drive/v3/files/$ori?key=$apikey";
-    $redirect               = "https://www.googleapis.com/drive/v3/files/$ori?alt=media&key=$apikey";
+    $url                    = "https://www.googleapis.com/drive/v2/files/$ori?supportsTeamDrives=true&key=$apikey";
+    $redirect               = "https://www.googleapis.com/drive/v3/files/$ori?supportsTeamDrives=true&alt=media&key=$apikey";
     $json                   = file_get_contents($url);
     $data                   = json_decode($json, true);
     $get_http_response_code = get_http_response_code($redirect);
