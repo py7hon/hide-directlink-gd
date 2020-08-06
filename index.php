@@ -46,7 +46,7 @@ function get_http_response_code($redirect){
     $json                   = file_get_contents($url);
     $data                   = json_decode($json, true);
     $get_http_response_code = get_http_response_code($redirect);
-    $name                   = $data["name"];
+    $name                   = $data["title"];
     $mime                   = $data["mimeType"];
     if ($get_http_response_code == 403){
         header('Content-Type: application/json');
